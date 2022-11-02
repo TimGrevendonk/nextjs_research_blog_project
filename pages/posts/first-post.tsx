@@ -1,14 +1,14 @@
-import type { AppProps } from "next/app";
+import { readFile } from "fs/promises";
 import Head from "next/head";
 
+// getStaticProps runs only on the server so it can use full nodeJS functionality.
 export async function getStaticProps() {
+    // get the data from a file, or incomming json.
+    const data = await readFile("content/posts/first-post.json", "utf8");
+    // parse that data into Json.
+    const post = JSON.parse(data);
     return {
-        props: {
-            post: {
-                title: "first post",
-                body: "my first post, as static props",
-            }
-        }
+        props: { post },
     }
 }
 
