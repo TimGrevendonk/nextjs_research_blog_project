@@ -1,5 +1,6 @@
 // Used to change the head of the document.
 import Head from "next/head"
+import Link from "next/link";
 
 // export default is that tis function will be the default function to load the page.
 export default function HomePage() {
@@ -12,8 +13,13 @@ export default function HomePage() {
       <title>Home - Tims blog</title>
       <meta name="description" content="this is my test project in nextJS"></meta>
     </Head>
-    <main>
+    <main className="general">
       <h1>Tims nextJS blog</h1>
+      <ul>
+        <li>
+          <Link href="/posts/first-post">First Post</Link>
+        </li>
+      </ul>
     </main>
     </>
   );

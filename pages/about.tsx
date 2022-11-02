@@ -9,7 +9,7 @@ export default function AboutPage() {
       <title>About - Tims blog</title>
       <meta name="description" content="this is my test project in nextJS"></meta>
     </Head>
-        <main>
+        <main className="general">
             <h1>about</h1>
         </main>
       </>

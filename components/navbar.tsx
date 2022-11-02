@@ -1,11 +1,12 @@
 // link is used for client side navigation, the Link tag replaces the <a> tags.
 import Link from "next/link";
 
-export default function NavBar() {
+export default function navbar() {
     return (
-        <nav>
+      <>
+      <nav className="navbar general">
         <ul>
-        <li>
+          <li>
             <Link href="/">home</Link>
           </li>
           <li>
@@ -13,5 +14,6 @@ export default function NavBar() {
           </li>
         </ul>
       </nav>
+      </>
     );
 }
