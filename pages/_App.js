@@ -1,7 +1,6 @@
 import Head from "next/head";
 // import a component, always starting from the pages folder.
 import NavBar from "../components/navbar";
-
 import "../styles/styles.scss";
 
 // Can template basic layout for pages.
