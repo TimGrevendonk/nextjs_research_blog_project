@@ -1,5 +1,14 @@
-.general {
-    * {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
+// Light theme.
+:root {
+    --theme-backgorund: white;
+    --theme-text: black;
+}
+
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--theme-backgorund);
+    color: var(--theme-text);
 }
